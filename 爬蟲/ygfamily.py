@@ -23,12 +23,13 @@ brower.get(url)
 # time.sleep(3)
 # brower.fullscreen_window()
 
-xpath = '//*[@id="nav"]/ul/li[3]/a'
+xpath = '//*[@id="nav"]/ul'
 b = brower.find_element(By.XPATH, xpath)
 print('##########')
-print(b)
+# print(b)
 print(b.text)
-print(b.__dir__())
+print(type(b.text))
+# print(b.__dir__())
 
 
 # time.sleep(3)
